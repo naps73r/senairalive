@@ -1,0 +1,472 @@
+/* ==========================================================
+   Senaisha Live V7.9.2 - Tablet / Echo ambient dashboard
+   Loaded after the Echo and V7.9 styles.
+   ========================================================== */
+
+.sl-dashboard-top-status,
+.sl-ambient-clock-panel,
+.sl-mini-station-art {
+  display: none;
+}
+
+/* ----------------------------------------------------------
+   Focused player mode: station selected, first 12 seconds.
+   The station library gets out of the way and the player uses
+   the full landscape canvas.
+   ---------------------------------------------------------- */
+html.sl-dashboard-device.sl-dashboard-focus .app-shell {
+  height: 100% !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .topbar {
+  flex: 0 0 48px !important;
+  min-height: 48px !important;
+  height: 48px !important;
+  padding: 3px 7px 7px !important;
+  gap: 12px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .brand,
+html.sl-dashboard-device.sl-dashboard-focus .topbar-actions,
+html.sl-dashboard-device.sl-dashboard-focus #themeBadge,
+html.sl-dashboard-device.sl-dashboard-focus #installButton,
+html.sl-dashboard-device.sl-dashboard-focus #weatherChip {
+  display: none !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .topbar {
+  justify-content: center !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .sl-dashboard-top-status {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  padding: 6px 12px !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.055) !important;
+  color: rgba(247,251,252,.92) !important;
+  font-size: clamp(.64rem, 1.2vw, .84rem) !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  backdrop-filter: blur(16px) saturate(135%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(135%) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .sl-top-clock {
+  color: #fff !important;
+  font-size: 1.08em !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .sl-top-separator {
+  opacity: .28 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .topbar-actions {
+  gap: 5px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .content-stage {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: block !important;
+  perspective: none !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .stations-section {
+  display: none !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .player-card {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: clamp(14px, 2.5vh, 24px) clamp(18px, 3vw, 34px) !important;
+  border-radius: 26px !important;
+  display: grid !important;
+  grid-template-columns: minmax(190px, 37%) minmax(0, 1fr) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  align-items: center !important;
+  justify-content: stretch !important;
+  gap: clamp(22px, 4vw, 52px) !important;
+  overflow: hidden !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .cover-wrap {
+  display: block !important;
+  width: min(100%, clamp(180px, 42vh, 310px)) !important;
+  max-width: 310px !important;
+  aspect-ratio: 1 !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus #coverArt {
+  border-radius: 24px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .player-panel {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-self: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: clamp(10px, 1.8vh, 16px) !important;
+  overflow: visible !important;
+  text-align: left !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .player-top {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  min-height: 0 !important;
+  text-align: left !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .eyebrow {
+  justify-content: flex-start !important;
+  font-size: clamp(.62rem, 1vw, .78rem) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus #nowPlayingText {
+  max-width: 100% !important;
+  font-size: clamp(1.8rem, 4.5vw, 3.7rem) !important;
+  line-height: 1 !important;
+  text-align: left !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus #stationRegion {
+  font-size: clamp(.72rem, 1.2vw, .96rem) !important;
+  text-align: left !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .v78-track-strip {
+  width: min(100%, 610px) !important;
+  min-height: 38px !important;
+  margin: 5px 0 0 !important;
+  padding: 5px 7px 5px 9px !important;
+  border-radius: 12px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .v78-track-title {
+  font-size: clamp(.58rem, 1vw, .72rem) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .v78-track-artist {
+  display: block !important;
+  font-size: clamp(.46rem, .82vw, .60rem) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .v78-identify-button {
+  min-height: 28px !important;
+  height: 28px !important;
+  padding: 5px 9px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .player-bottom {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 9px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .equalizer {
+  display: none !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .equalizer-wrap {
+  min-height: 23px !important;
+  margin: 0 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .status-pill {
+  min-height: 22px !important;
+  padding: 4px 8px !important;
+  font-size: .49rem !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .controls {
+  justify-content: flex-start !important;
+  gap: 12px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .control-btn {
+  width: 42px !important;
+  height: 42px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .control-btn.primary {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .control-btn svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .control-btn.primary svg {
+  width: 23px !important;
+  height: 23px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus .volume-row {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: min(100%, 360px) !important;
+  max-width: 360px !important;
+  min-height: 24px !important;
+  margin: 0 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus #volumeSlider {
+  display: block !important;
+  visibility: visible !important;
+  width: 100% !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus #showStationsButton {
+  display: inline-flex !important;
+  position: absolute !important;
+  right: 14px !important;
+  bottom: 13px !important;
+  z-index: 5 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 7px 11px !important;
+  gap: 6px !important;
+  border-radius: 999px !important;
+  font-size: .60rem !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus #showStationsButton svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* ----------------------------------------------------------
+   Ambient mode: after 12 seconds with no interaction.
+   Top bar disappears. The large station art is replaced by a
+   large Bahrain clock/weather/date panel. The radio player stays
+   beside it in the SAME horizontal row.
+   ---------------------------------------------------------- */
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .topbar {
+  display: none !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .content-stage {
+  flex: 1 1 100% !important;
+  height: 100% !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-card {
+  grid-template-columns: minmax(240px, 41%) minmax(0, 1fr) !important;
+  gap: clamp(24px, 4vw, 52px) !important;
+  padding: clamp(18px, 3vh, 30px) clamp(22px, 3vw, 38px) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .cover-wrap {
+  display: none !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-clock-panel {
+  display: flex !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  align-self: stretch !important;
+  justify-self: stretch !important;
+  padding: clamp(8px, 2vh, 18px) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
+  color: #fff !important;
+  font-size: clamp(4.2rem, 10vw, 7.8rem) !important;
+  line-height: .88 !important;
+  font-weight: 650 !important;
+  letter-spacing: -.07em !important;
+  white-space: nowrap !important;
+  text-shadow: 0 10px 38px rgba(0,0,0,.28) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-weather-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin-top: clamp(16px, 3vh, 25px) !important;
+  color: rgba(247,251,252,.95) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-weather-icon {
+  font-size: clamp(1.25rem, 3vw, 2rem) !important;
+  line-height: 1 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-temperature {
+  font-size: clamp(1.4rem, 3.2vw, 2.2rem) !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-location {
+  margin-top: 7px !important;
+  color: rgba(235,247,250,.65) !important;
+  font-size: clamp(.72rem, 1.6vw, 1rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: .04em !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-date {
+  margin-top: 13px !important;
+  color: rgba(247,251,252,.90) !important;
+  font-size: clamp(.90rem, 2vw, 1.28rem) !important;
+  font-weight: 650 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-panel {
+  align-self: center !important;
+  justify-content: center !important;
+  gap: clamp(10px, 2vh, 17px) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top {
+  display: grid !important;
+  grid-template-columns: clamp(56px, 8vw, 82px) minmax(0, 1fr) !important;
+  grid-template-rows: auto auto auto auto !important;
+  column-gap: 13px !important;
+  row-gap: 3px !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-mini-station-art {
+  display: block !important;
+  grid-column: 1 !important;
+  grid-row: 1 / 5 !important;
+  width: clamp(56px, 8vw, 82px) !important;
+  height: clamp(56px, 8vw, 82px) !important;
+  align-self: start !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-mini-station-art img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(255,255,255,.16) !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.28) !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > .eyebrow,
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > #nowPlayingText,
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > #stationRegion,
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > .v78-track-strip {
+  grid-column: 2 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > .eyebrow {
+  grid-row: 1 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > #nowPlayingText {
+  grid-row: 2 !important;
+  font-size: clamp(1.55rem, 3.6vw, 3rem) !important;
+  line-height: .98 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > #stationRegion {
+  grid-row: 3 !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-top > .v78-track-strip {
+  grid-row: 4 !important;
+  width: 100% !important;
+  margin-top: 5px !important;
+}
+
+html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-bottom {
+  padding-left: calc(clamp(56px, 8vw, 82px) + 13px) !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+}
+
+/* On the shortest Echo viewports, keep everything legible instead of tiny. */
+html.alaina-silk.sl-dashboard-device.sl-dashboard-focus .player-card {
+  border-radius: 22px !important;
+}
+
+html.alaina-silk.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
+  font-size: clamp(3.4rem, 9.5vw, 6.2rem) !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .topbar {
+  flex-basis: 38px !important;
+  min-height: 38px !important;
+  height: 38px !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .sl-dashboard-top-status {
+  font-size: .54rem !important;
+  gap: 5px !important;
+  padding: 4px 8px !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .player-card {
+  grid-template-columns: minmax(145px, 34%) minmax(0, 1fr) !important;
+  padding: 9px 13px !important;
+  gap: 15px !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .cover-wrap {
+  width: min(100%, 145px) !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-card {
+  grid-template-columns: minmax(170px, 38%) minmax(0, 1fr) !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
+  font-size: 3.2rem !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .control-btn {
+  width: 34px !important;
+  height: 34px !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .control-btn.primary {
+  width: 44px !important;
+  height: 44px !important;
+}
+
+html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .v78-track-strip {
+  min-height: 29px !important;
+}
