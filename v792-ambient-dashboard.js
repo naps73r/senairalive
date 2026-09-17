@@ -5,6 +5,10 @@
   const IDLE_MS = 12000;
 
   function isDashboardDevice(info) {
+    if (root && root.SenaishaDashboardDetection &&
+        typeof root.SenaishaDashboardDetection.isDashboardDevice === "function") {
+      return root.SenaishaDashboardDetection.isDashboardDevice(info);
+    }
     const width = Number(info && info.width) || 0;
     const height = Number(info && info.height) || 0;
     const landscape = width > height;
@@ -192,6 +196,8 @@
     const ua = String((root.navigator && root.navigator.userAgent) || "");
     return isDashboardDevice({
       isSilk: /Silk\//i.test(ua),
+      userAgent: ua,
+      forceDashboard: new URLSearchParams(root.location.search).get("dashboard") === "1",
       width: root.innerWidth,
       height: root.innerHeight,
       maxTouchPoints: Number((root.navigator && root.navigator.maxTouchPoints) || 0),
