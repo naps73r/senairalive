@@ -16,8 +16,8 @@
   Only Amazon Silk receives these rules.
 */
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk body,
-body.Alaina X Senaira-x-Alaina X Senaira-silk {
+html.alaina-x-senaira-silk body,
+body.alaina-x-senaira-silk {
   padding:
     max(7px, env(safe-area-inset-top))
     max(10px, env(safe-area-inset-right))
@@ -29,7 +29,7 @@ body.Alaina X Senaira-x-Alaina X Senaira-silk {
    Header: restore breathing room and make the brand readable.
    ---------------------------------------------------------- */
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .topbar {
+html.alaina-x-senaira-silk .topbar {
   flex: 0 0 46px !important;
   min-height: 46px !important;
   height: 46px !important;
@@ -38,31 +38,31 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .topbar {
   align-items: center !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .brand {
+html.alaina-x-senaira-silk .brand {
   display: flex !important;
   align-items: baseline !important;
   gap: 9px !important;
   min-width: 0 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .brand-name {
+html.alaina-x-senaira-silk .brand-name {
   font-size: clamp(1.95rem, 3vw, 2.45rem) !important;
   line-height: .95 !important;
   white-space: nowrap !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .brand-subtitle {
+html.alaina-x-senaira-silk .brand-subtitle {
   display: block !important;
   font-size: .54rem !important;
   letter-spacing: .12em !important;
   opacity: .78 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .topbar-actions {
+html.alaina-x-senaira-silk .topbar-actions {
   gap: 6px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .topbar-chip {
+html.alaina-x-senaira-silk .topbar-chip {
   min-width: 34px !important;
   min-height: 34px !important;
   height: 34px !important;
@@ -71,17 +71,17 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .topbar-chip {
   font-size: .64rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .weather-chip {
+html.alaina-x-senaira-silk .weather-chip {
   min-width: 58px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk #weatherChipTemp {
+html.alaina-x-senaira-silk #weatherChipTemp {
   font-size: .72rem !important;
 }
 
 /* Keep the Echo header clean. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk #themeBadge,
-html.Alaina X Senaira-x-Alaina X Senaira-silk #installButton {
+html.alaina-x-senaira-silk #themeBadge,
+html.alaina-x-senaira-silk #installButton {
   display: none !important;
 }
 
@@ -89,7 +89,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk #installButton {
    Main content: side-by-side instead of vertically stacked.
    ---------------------------------------------------------- */
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .content-stage {
+html.alaina-x-senaira-silk .content-stage {
   flex: 1 1 auto !important;
   min-height: 0 !important;
   height: auto !important;
@@ -105,7 +105,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .content-stage {
    Player panel
    ---------------------------------------------------------- */
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .player-card {
+html.alaina-x-senaira-silk .player-card {
   position: relative !important;
   inset: auto !important;
 
@@ -127,7 +127,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .player-card {
   opacity: 1 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .cover-wrap {
+html.alaina-x-senaira-silk .cover-wrap {
   flex: 0 0 auto !important;
   width: clamp(122px, 24vh, 172px) !important;
   max-width: 62% !important;
@@ -135,15 +135,15 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .cover-wrap {
   justify-self: auto !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk #coverArt {
+html.alaina-x-senaira-silk #coverArt {
   border-radius: 20px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .cover-glow {
+html.alaina-x-senaira-silk .cover-glow {
   filter: blur(36px) !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .player-panel {
+html.alaina-x-senaira-silk .player-panel {
   flex: 1 1 auto !important;
   min-height: 0 !important;
   width: 100% !important;
@@ -159,14 +159,14 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .player-panel {
   text-align: center !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .player-top {
+html.alaina-x-senaira-silk .player-top {
   display: flex !important;
   flex-direction: column !important;
   gap: 4px !important;
   min-height: 0 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .player-bottom {
+html.alaina-x-senaira-silk .player-bottom {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -174,7 +174,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .player-bottom {
   min-height: 0 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .eyebrow {
+html.alaina-x-senaira-silk .eyebrow {
   justify-content: center !important;
   gap: 7px !important;
   margin: 0 !important;
@@ -182,12 +182,12 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .eyebrow {
   letter-spacing: .11em !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .live-dot {
+html.alaina-x-senaira-silk .live-dot {
   width: 7px !important;
   height: 7px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk #nowPlayingText {
+html.alaina-x-senaira-silk #nowPlayingText {
   max-width: 100% !important;
   margin: 0 !important;
   font-size: clamp(1.5rem, 2.65vw, 2.15rem) !important;
@@ -198,7 +198,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk #nowPlayingText {
   white-space: nowrap !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk #stationRegion {
+html.alaina-x-senaira-silk #stationRegion {
   min-height: 1.15em !important;
   margin: 0 !important;
   font-size: .72rem !important;
@@ -206,7 +206,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk #stationRegion {
 }
 
 /* Track strip is useful, but no longer microscopic. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-track-strip {
+html.alaina-x-senaira-silk .v78-track-strip {
   width: 100% !important;
   min-height: 34px !important;
   grid-template-columns: 20px minmax(0,1fr) auto !important;
@@ -216,25 +216,25 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-track-strip {
   border-radius: 11px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-track-icon {
+html.alaina-x-senaira-silk .v78-track-icon {
   width: 20px !important;
   height: 20px !important;
   font-size: .72rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-track-title {
+html.alaina-x-senaira-silk .v78-track-title {
   font-size: .62rem !important;
   line-height: 1.08 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-track-artist {
+html.alaina-x-senaira-silk .v78-track-artist {
   display: block !important;
   margin-top: 2px !important;
   font-size: .49rem !important;
   line-height: 1.06 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-identify-button {
+html.alaina-x-senaira-silk .v78-identify-button {
   min-height: 27px !important;
   height: 27px !important;
   padding: 5px 9px !important;
@@ -242,50 +242,50 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .v78-identify-button {
 }
 
 /* We retain a compact status indicator, not the decorative equalizer. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk .equalizer-wrap {
+html.alaina-x-senaira-silk .equalizer-wrap {
   min-height: 24px !important;
   justify-content: center !important;
   margin: 0 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .equalizer {
+html.alaina-x-senaira-silk .equalizer {
   display: none !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .status-pill {
+html.alaina-x-senaira-silk .status-pill {
   min-height: 23px !important;
   padding: 4px 8px !important;
   font-size: .50rem !important;
 }
 
 /* Playback controls return to a comfortable touch size. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk .controls {
+html.alaina-x-senaira-silk .controls {
   justify-content: center !important;
   gap: 12px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .control-btn {
+html.alaina-x-senaira-silk .control-btn {
   width: 40px !important;
   height: 40px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .control-btn.primary {
+html.alaina-x-senaira-silk .control-btn.primary {
   width: 52px !important;
   height: 52px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .control-btn svg {
+html.alaina-x-senaira-silk .control-btn svg {
   width: 18px !important;
   height: 18px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .control-btn.primary svg {
+html.alaina-x-senaira-silk .control-btn.primary svg {
   width: 22px !important;
   height: 22px !important;
 }
 
 /* Restore the volume control — this was the biggest usability loss in 7.8.2. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk .volume-row {
+html.alaina-x-senaira-silk .volume-row {
   display: flex !important;
   visibility: visible !important;
   width: min(88%, 280px) !important;
@@ -295,12 +295,12 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .volume-row {
   gap: 8px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .volume-row svg {
+html.alaina-x-senaira-silk .volume-row svg {
   width: 16px !important;
   height: 16px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk #volumeSlider {
+html.alaina-x-senaira-silk #volumeSlider {
   display: block !important;
   visibility: visible !important;
   width: 100% !important;
@@ -308,8 +308,8 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk #volumeSlider {
 }
 
 /* The mobile flip UI must never activate on Silk. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk .mobile-flip-button,
-html.Alaina X Senaira-x-Alaina X Senaira-silk .mobile-back-button {
+html.alaina-x-senaira-silk .mobile-flip-button,
+html.alaina-x-senaira-silk .mobile-back-button {
   display: none !important;
 }
 
@@ -317,7 +317,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .mobile-back-button {
    Station library: 4 x 3 gives every card real breathing room.
    ---------------------------------------------------------- */
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .stations-section {
+html.alaina-x-senaira-silk .stations-section {
   position: relative !important;
   inset: auto !important;
 
@@ -337,7 +337,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .stations-section {
   opacity: 1 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .section-header {
+html.alaina-x-senaira-silk .section-header {
   flex: 0 0 31px !important;
   min-height: 31px !important;
   height: 31px !important;
@@ -346,17 +346,17 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .section-header {
   padding: 0 3px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .section-title {
+html.alaina-x-senaira-silk .section-title {
   font-size: .84rem !important;
   line-height: 1 !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .station-count {
+html.alaina-x-senaira-silk .station-count {
   display: block !important;
   font-size: .54rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .stations {
+html.alaina-x-senaira-silk .stations {
   flex: 1 1 auto !important;
   min-height: 0 !important;
   height: auto !important;
@@ -368,7 +368,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .stations {
   gap: 8px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .station-card {
+html.alaina-x-senaira-silk .station-card {
   min-width: 0 !important;
   min-height: 0 !important;
 
@@ -383,7 +383,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .station-card {
   text-align: center !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .station-art {
+html.alaina-x-senaira-silk .station-art {
   flex: 0 0 auto !important;
   width: clamp(54px, 10vh, 80px) !important;
   height: clamp(54px, 10vh, 80px) !important;
@@ -391,7 +391,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .station-art {
   border-radius: 12px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .station-name {
+html.alaina-x-senaira-silk .station-name {
   width: 100% !important;
   margin: 5px 0 0 !important;
 
@@ -405,7 +405,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .station-name {
   text-align: center !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .station-meta {
+html.alaina-x-senaira-silk .station-meta {
   display: flex !important;
   width: 100% !important;
   min-height: 1em !important;
@@ -417,7 +417,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .station-meta {
   text-align: center !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .favorite-toggle {
+html.alaina-x-senaira-silk .favorite-toggle {
   top: 5px !important;
   left: 5px !important;
   width: 22px !important;
@@ -425,7 +425,7 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .favorite-toggle {
   font-size: 11px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk .station-play-indicator {
+html.alaina-x-senaira-silk .station-play-indicator {
   display: none !important;
 }
 
@@ -434,213 +434,213 @@ html.Alaina X Senaira-x-Alaina X Senaira-silk .station-play-indicator {
    Still side-by-side, simply proportionally tighter.
    ---------------------------------------------------------- */
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .topbar {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .topbar {
   flex-basis: 40px !important;
   min-height: 40px !important;
   height: 40px !important;
   padding-bottom: 5px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .brand-name {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .brand-name {
   font-size: 1.75rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .brand-subtitle {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .brand-subtitle {
   display: none !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .topbar-chip {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .topbar-chip {
   min-height: 30px !important;
   height: 30px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .content-stage {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .content-stage {
   grid-template-columns: minmax(272px, 33%) minmax(0, 1fr) !important;
   gap: 7px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .player-card {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .player-card {
   padding: 9px 12px !important;
   gap: 5px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .cover-wrap {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .cover-wrap {
   width: clamp(102px, 20vh, 132px) !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short #nowPlayingText {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short #nowPlayingText {
   font-size: clamp(1.25rem, 2.3vw, 1.75rem) !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .v78-track-strip {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .v78-track-strip {
   min-height: 29px !important;
   padding-top: 3px !important;
   padding-bottom: 3px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .v78-track-artist {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .v78-track-artist {
   font-size: .44rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .controls {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .controls {
   gap: 9px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .control-btn {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .control-btn {
   width: 34px !important;
   height: 34px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .control-btn.primary {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .control-btn.primary {
   width: 44px !important;
   height: 44px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .volume-row {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .volume-row {
   min-height: 20px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .stations-section {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .stations-section {
   padding: 7px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .section-header {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .section-header {
   flex-basis: 25px !important;
   min-height: 25px !important;
   height: 25px !important;
   margin-bottom: 5px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .stations {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .stations {
   gap: 6px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .station-card {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .station-card {
   padding: 5px 4px !important;
   border-radius: 12px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .station-art {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .station-art {
   width: clamp(44px, 8.4vh, 62px) !important;
   height: clamp(44px, 8.4vh, 62px) !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .station-name {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .station-name {
   margin-top: 3px !important;
   font-size: .56rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-short .station-meta {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-short .station-meta {
   margin-top: 2px !important;
   font-size: .45rem !important;
 }
 
 /* Extreme compact mode — likely Echo Show 5 or unusually tall browser chrome. */
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .topbar {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .topbar {
   flex-basis: 35px !important;
   min-height: 35px !important;
   height: 35px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .brand-name {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .brand-name {
   font-size: 1.55rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .brand-subtitle {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .brand-subtitle {
   display: none !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .topbar-chip {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .topbar-chip {
   min-width: 27px !important;
   min-height: 27px !important;
   height: 27px !important;
   padding: 3px 6px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .content-stage {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .content-stage {
   grid-template-columns: minmax(245px, 32%) minmax(0, 1fr) !important;
   gap: 6px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .player-card {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .player-card {
   padding: 7px 9px !important;
   gap: 4px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .cover-wrap {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .cover-wrap {
   width: 90px !important;
   max-width: 90px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short #nowPlayingText {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short #nowPlayingText {
   font-size: 1.12rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short #stationRegion {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short #stationRegion {
   font-size: .55rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .v78-track-strip {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .v78-track-strip {
   min-height: 25px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .v78-track-artist {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .v78-track-artist {
   display: none !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .equalizer-wrap {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .equalizer-wrap {
   display: none !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .controls {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .controls {
   gap: 7px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .control-btn {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .control-btn {
   width: 30px !important;
   height: 30px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .control-btn.primary {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .control-btn.primary {
   width: 39px !important;
   height: 39px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .volume-row {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .volume-row {
   display: flex !important;
   min-height: 18px !important;
   width: 92% !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .stations-section {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .stations-section {
   padding: 6px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .section-header {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .section-header {
   flex-basis: 21px !important;
   min-height: 21px !important;
   height: 21px !important;
   margin-bottom: 4px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .stations {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .stations {
   gap: 4px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .station-card {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .station-card {
   padding: 3px !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .station-art {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .station-art {
   width: clamp(37px, 8vh, 49px) !important;
   height: clamp(37px, 8vh, 49px) !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .station-name {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .station-name {
   margin-top: 2px !important;
   font-size: .48rem !important;
 }
 
-html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short .station-meta {
+html.alaina-x-senaira-silk.alaina-x-senaira-silk-very-short .station-meta {
   display: none !important;
 }

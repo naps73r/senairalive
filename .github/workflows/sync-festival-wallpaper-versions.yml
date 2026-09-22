@@ -94,7 +94,7 @@ jobs:
             exit 0
           fi
 
-          git config user.name "Alaina X Senaira-x-Alaina X Senaira-bot"
+          git config user.name "alaina-x-senaira-bot"
           git config user.email "actions@users.noreply.github.com"
 
           git commit -m "Sync festival wallpaper cache versions"

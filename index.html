@@ -2090,7 +2090,7 @@
       opacity: 1;
     }
 
-    .Alaina X Senaira-x-Alaina X Senaira-toast {
+    .alaina-x-senaira-toast {
       position: fixed;
       z-index: 1200;
       top: calc(env(safe-area-inset-top) + 64px);
@@ -2117,12 +2117,12 @@
       text-align: left;
     }
 
-    .Alaina X Senaira-x-Alaina X Senaira-toast.visible {
+    .alaina-x-senaira-toast.visible {
       opacity: 1;
       transform: translate(-50%, 0) scale(1);
     }
 
-    .Alaina X Senaira-x-Alaina X Senaira-toast-mark {
+    .alaina-x-senaira-toast-mark {
       width: 25px;
       height: 25px;
       display: grid;
@@ -2653,7 +2653,7 @@
         grid-template-columns: repeat(2, minmax(0,1fr));
       }
 
-      .Alaina X Senaira-x-Alaina X Senaira-toast {
+      .alaina-x-senaira-toast {
         top: calc(env(safe-area-inset-top) + 53px);
         font-size: .68rem;
       }
@@ -3285,8 +3285,8 @@
 
   <div id="seasonalDecor" class="seasonal-decor" aria-hidden="true"></div>
 
-  <div id="alainaXSenairaToast" class="Alaina X Senaira-x-Alaina X Senaira-toast" role="status" aria-live="polite">
-    <span class="Alaina X Senaira-x-Alaina X Senaira-toast-mark">♪</span>
+  <div id="alainaXSenairaToast" class="alaina-x-senaira-toast" role="status" aria-live="polite">
+    <span class="alaina-x-senaira-toast-mark">♪</span>
     <span id="alainaXSenairaToastText">Alaina X Senaira</span>
   </div>
 
@@ -5180,7 +5180,7 @@
       if (!theme) {
         document.body.removeAttribute("data-theme");
         themeBadge.hidden = true;
-        window.dispatchEvent(new CustomEvent("Alaina X Senaira-x-Alaina X Senaira:themechange", { detail: null }));
+        window.dispatchEvent(new CustomEvent("alaina-x-senaira:themechange", { detail: null }));
         return;
       }
 
@@ -5200,7 +5200,7 @@
         seasonalDecor.appendChild(span);
       });
 
-      window.dispatchEvent(new CustomEvent("Alaina X Senaira-x-Alaina X Senaira:themechange", { detail: theme }));
+      window.dispatchEvent(new CustomEvent("alaina-x-senaira:themechange", { detail: theme }));
 
       let festiveMessage = `${theme.icon} ${theme.label} theme is on today.`;
       if (theme.festivePhase === "before" && theme.festiveDistance > 0) {
@@ -5589,7 +5589,7 @@
       if (!modeMenu.hidden) setTimeout(positionMenu, 180);
     });
 
-    window.addEventListener("Alaina X Senaira-x-Alaina X Senaira:themechange", () => {
+    window.addEventListener("alaina-x-senaira:themechange", () => {
       applySelectedMode({ persist: false, notify: false });
     });
 

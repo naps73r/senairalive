@@ -73,7 +73,7 @@ jobs:
 
           USER_AGENT = (
               "AlainaXSenairaFestivalWallpaper/1.3 "
-              "(https://github.com/naps73r/Alaina X Senaira-x-Alaina X Senaira; "
+              "(https://github.com/naps73r/alaina-x-senaira; "
               "non-commercial radio background cache)"
           )
 
@@ -628,7 +628,7 @@ jobs:
             exit 0
           fi
 
-          git config user.name "Alaina X Senaira-x-Alaina X Senaira-bot"
+          git config user.name "alaina-x-senaira-bot"
           git config user.email "actions@users.noreply.github.com"
 
           git commit -m "Update festival wallpaper library"
