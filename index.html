@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <title>Senaisha Live</title>
-  <meta name="description" content="Senaisha Live — your live radio stations in one beautiful player.">
+  <title>Senaira Live</title>
+  <meta name="description" content="Senaira Live — your live radio stations in one beautiful player.">
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -2980,7 +2980,7 @@
     <button class="background-mode-option" type="button" role="menuitemradio"
             aria-checked="false" data-background-mode="classic">
       <span class="background-mode-option-icon">🌊</span>
-      <span><strong>Classic</strong><small>Original SenaishaLive teal, no particles</small></span>
+      <span><strong>Classic</strong><small>Original SenairaLive teal, no particles</small></span>
       <span class="background-mode-check">✓</span>
     </button>
     <button class="background-mode-option" type="button" role="menuitemradio"
@@ -2991,7 +2991,7 @@
     </button>
 
     <div id="backgroundPhotoStatus" class="background-photo-status">
-      Photo follows festival days. Classic restores the original SenaishaLive teal.
+      Photo follows festival days. Classic restores the original SenairaLive teal.
     </div>
     <a id="backgroundPhotoCredit" class="background-photo-credit" href="#"
        target="_blank" rel="noopener noreferrer" hidden></a>
@@ -3001,7 +3001,7 @@
   <main class="app-shell">
     <header class="topbar">
       <div class="brand">
-        <div class="brand-name">Senaisha Live</div>
+        <div class="brand-name">Senaira Live</div>
         <div class="brand-subtitle">Live Radio</div>
       </div>
 
@@ -3025,12 +3025,12 @@
           <span id="themeBadgeText">Seasonal</span>
         </div>
 
-        <button id="hubButton" class="topbar-chip hub-button" type="button" aria-label="Open Senaisha extras">
+        <button id="hubButton" class="topbar-chip hub-button" type="button" aria-label="Open Senaira extras">
           <span class="hub-sparkle" aria-hidden="true">✦</span>
           <span class="chip-label">Extras</span>
         </button>
 
-        <button id="installButton" class="install-btn" type="button" aria-label="Install Senaisha Live">
+        <button id="installButton" class="install-btn" type="button" aria-label="Install Senaira Live">
           <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true">
             <path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.29a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42l2.3 2.29V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/>
           </svg>
@@ -3053,7 +3053,7 @@
             <span id="nowPlayingTextHeader">Now Playing</span>
           </div>
 
-          <h1 id="nowPlayingText">Senaisha Ready!</h1>
+          <h1 id="nowPlayingText">Senaira Ready!</h1>
           <p id="stationRegion">Choose a station to begin</p>
         </div>
 
@@ -3268,7 +3268,7 @@
 
     </div>
 
-    <div class="footer-note">Senaisha Live · tap a station and enjoy</div>
+    <div class="footer-note">Senaira Live · tap a station and enjoy</div>
   </main>
 
 
@@ -3276,7 +3276,7 @@
 
   <div id="alainaToast" class="alaina-toast" role="status" aria-live="polite">
     <span class="alaina-toast-mark">♪</span>
-    <span id="alainaToastText">Senaisha Live</span>
+    <span id="alainaToastText">Senaira Live</span>
   </div>
 
   <div id="featureOverlay" class="feature-overlay" hidden>
@@ -3284,7 +3284,7 @@
       <header class="feature-header">
         <button id="featureBackButton" class="feature-nav-button" type="button" aria-label="Back" hidden>‹</button>
         <div>
-          <div class="feature-kicker">Senaisha Live</div>
+          <div class="feature-kicker">Senaira Live</div>
           <h2 id="featureTitle">Extras</h2>
         </div>
         <button id="featureCloseButton" class="feature-close-button" type="button" aria-label="Close">×</button>
@@ -3326,7 +3326,7 @@
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
 
   <script>
-    // SENAISHA_V79_SEAMLESS_HANDOFF
+    // Senaira_V79_SEAMLESS_HANDOFF
     // Two decks: the current station keeps playing while the standby deck
     // connects to the requested station. The variables are swapped only
     // after the new station is genuinely playing.
@@ -3466,7 +3466,7 @@
       try {
         navigator.mediaSession.metadata = new MediaMetadata({
           title: stationName,
-          artist: `${regionName} · Senaisha Live`,
+          artist: `${regionName} · Senaira Live`,
           album: "Live Radio",
           artwork: [{ src: art }]
         });
@@ -3488,7 +3488,7 @@
       stationRegion.textContent = `${flag} ${card.dataset.regionName || "Live Radio"}`.trim();
       coverArt.src = card.dataset.art;
       coverArt.alt = `${card.dataset.name} artwork`;
-      document.title = `${card.dataset.name} | Senaisha Live`;
+      document.title = `${card.dataset.name} | Senaira Live`;
 
       localStorage.setItem("alainaLastStation", String(index));
       updateMediaSession(card);
@@ -4194,7 +4194,7 @@
       if (hour >= 5 && hour < 11) return "Good morning ☀️ Coffee + radio?";
       if (hour >= 11 && hour < 17) return "Good afternoon 👋 Need some music?";
       if (hour >= 17 && hour < 23) return "Good evening 🌙 Time to unwind.";
-      return "Still awake? 👀 Senaisha Live is too.";
+      return "Still awake? 👀 Senaira Live is too.";
     }
 
     function openHub(feature = null) {
@@ -4449,7 +4449,7 @@
     }
 
     async function renderJoke() {
-      showFeatureShell("Senaisha's Joke");
+      showFeatureShell("Senaira's Joke");
 
       featureContent.innerHTML = `
         <div class="feature-center">
@@ -4549,7 +4549,7 @@
             audio.volume = Number(volumeSlider.value);
           }, 300);
           stopSleepTimer(false);
-          showAlaina("Good night 🌙 Senaisha has faded the radio out.");
+          showAlaina("Good night 🌙 Senaira has faded the radio out.");
         }
       }, 500);
     }
@@ -4712,7 +4712,7 @@
         <div class="feature-center">
           <div class="feature-big-icon">🎲</div>
           <div id="rouletteName" class="feature-primary">Spinning…</div>
-          <div class="feature-secondary">Senaisha is making an important musical decision.</div>
+          <div class="feature-secondary">Senaira is making an important musical decision.</div>
         </div>`;
 
       const name = document.getElementById("rouletteName");
@@ -5438,7 +5438,7 @@
         if (wanted === "motion") {
           window.showAlaina("Original animated background on ✨");
         } else if (wanted === "classic") {
-          window.showAlaina("Classic SenaishaLive background on 🌊");
+          window.showAlaina("Classic SenairaLive background on 🌊");
         } else if (wanted === "photo" && canShowPhoto) {
           const theme = currentTheme();
           window.showAlaina(`🖼️ ${theme?.label || "Festival"} photo background on.`);
