@@ -1,5 +1,5 @@
 /* ==========================================================
-   Senaisha Live V7.9.2 - Tablet / Echo ambient dashboard
+   Alaina X Senaira V7.9.2 - Tablet / Echo ambient dashboard
    Loaded after the Echo and V7.9 styles.
    ========================================================== */
 
@@ -419,54 +419,54 @@ html.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-bottom 
 }
 
 /* On the shortest Echo viewports, keep everything legible instead of tiny. */
-html.alaina-silk.sl-dashboard-device.sl-dashboard-focus .player-card {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.sl-dashboard-device.sl-dashboard-focus .player-card {
   border-radius: 22px !important;
 }
 
-html.alaina-silk.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
   font-size: clamp(3.4rem, 9.5vw, 6.2rem) !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .topbar {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .topbar {
   flex-basis: 38px !important;
   min-height: 38px !important;
   height: 38px !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .sl-dashboard-top-status {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .sl-dashboard-top-status {
   font-size: .54rem !important;
   gap: 5px !important;
   padding: 4px 8px !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .player-card {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .player-card {
   grid-template-columns: minmax(145px, 34%) minmax(0, 1fr) !important;
   padding: 9px 13px !important;
   gap: 15px !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .cover-wrap {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .cover-wrap {
   width: min(100%, 145px) !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-card {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .player-card {
   grid-template-columns: minmax(170px, 38%) minmax(0, 1fr) !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus.sl-dashboard-ambient .sl-ambient-time {
   font-size: 3.2rem !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .control-btn {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .control-btn {
   width: 34px !important;
   height: 34px !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .control-btn.primary {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .control-btn.primary {
   width: 44px !important;
   height: 44px !important;
 }
 
-html.alaina-silk.alaina-silk-very-short.sl-dashboard-device.sl-dashboard-focus .v78-track-strip {
+html.Alaina X Senaira-x-Alaina X Senaira-silk.Alaina X Senaira-x-Alaina X Senaira-silk-very-short.sl-dashboard-device.sl-dashboard-focus .v78-track-strip {
   min-height: 29px !important;
 }

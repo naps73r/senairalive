@@ -1,5 +1,5 @@
 /* ==========================================================
-   Senaisha Live V7.9 — Seamless Station Handoff
+   Alaina X Senaira V7.9 — Seamless Station Handoff
    ========================================================== */
 
 .station-card.is-tuning {
@@ -20,10 +20,10 @@
   border: 2px solid rgba(255,255,255,.28);
   border-top-color: var(--accent, #67e8f9);
   border-radius: 50%;
-  animation: senaishaTuneSpin .72s linear infinite;
+  animation: alainaXSenairaTuneSpin .72s linear infinite;
   pointer-events: none;
 }
 
-@keyframes senaishaTuneSpin {
+@keyframes alainaXSenairaTuneSpin {
   to { transform: rotate(360deg); }
 }

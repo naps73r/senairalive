@@ -1,8 +1,8 @@
-﻿(() => {
+(() => {
   "use strict";
 
   /*
-   * Alaina Live V7.8
+   * Alaina X Senaira V7.8
    * - Stable station deep links for Siri / Samsung shortcuts later.
    * - Best-effort live stream metadata (Zeno, Triton, Icecast).
    * - Compact Now Playing strip + local heard-track history.
@@ -24,7 +24,7 @@
 
   if (!cards.length || !audioEl || !playerTop || !stationRegionEl) return;
 
-  const HISTORY_KEY = "alainaTrackHistoryV78";
+  const HISTORY_KEY = "alainaXSenairaTrackHistoryV78";
   const MAX_HISTORY = 10;
   const POLL_MS = 15000;
   const SOURCE_TIMEOUT_MS = 6500;
@@ -266,7 +266,7 @@
       openSheet("Recently heard", `
         <div class="v78-track-empty">
           No track titles have been received yet.<br>
-          When a station publishes song metadata, Alaina Live will remember the latest ${MAX_HISTORY}.
+          When a station publishes song metadata, Alaina X Senaira will remember the latest ${MAX_HISTORY}.
         </div>
       `);
       return;
@@ -416,7 +416,7 @@
         navigator.mediaSession.metadata = new MediaMetadata({
           title: normalized.title,
           artist: normalized.artist || stationName,
-          album: `${stationName} · Alaina Live`,
+          album: `${stationName} · Alaina X Senaira`,
           artwork: [{ src: art }]
         });
       } catch (_) {}
@@ -737,8 +737,8 @@
     const index = indexForConfig(config);
 
     if (index < 0) {
-      if (typeof window.showAlaina === "function") {
-        window.showAlaina(`Station "${requested}" was not found.`);
+      if (typeof window.showAlainaXSenaira === "function") {
+        window.showAlainaXSenaira(`Station "${requested}" was not found.`);
       }
       detectStationChange();
       return;
@@ -773,7 +773,7 @@
     }, 180);
   }
 
-  window.AlainaVoice = Object.freeze({
+  window.AlainaXSenairaVoice = Object.freeze({
     stations: CONFIGS.map(config => ({
       id: config.slug,
       aliases: [...config.aliases]
@@ -868,12 +868,12 @@
           </p>
           <p>
             If you prefer Shazam, enable its <strong>Notification bar</strong>
-            option once. Then while Alaina Live is playing, swipe down and tap
+            option once. Then while Alaina X Senaira is playing, swipe down and tap
             <strong>Shazam</strong>. Shazam can recognise audio playing on the
             same Android device, including through headphones.
           </p>
           <div class="v78-help-note">
-            V7.8.1 deliberately stays in Alaina Live. The previous button used
+            V7.8.1 deliberately stays in Alaina X Senaira. The previous button used
             an undocumented Shazam Android intent; current Shazam does not
             expose that recognition action to web browsers, which is why
             Chrome sent you to the install website instead.
@@ -920,7 +920,7 @@
              target="_blank" rel="noopener">Open Shazam Web</a>
         </div>
         <div class="v78-help-note">
-          For a true one-tap Identify button inside Alaina Live on every
+          For a true one-tap Identify button inside Alaina X Senaira on every
           device, we need a small server-side audio recognition service rather
           than an installed-app deep link.
         </div>

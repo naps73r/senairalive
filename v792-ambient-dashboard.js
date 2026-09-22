@@ -5,9 +5,9 @@
   const IDLE_MS = 12000;
 
   function isDashboardDevice(info) {
-    if (root && root.SenaishaDashboardDetection &&
-        typeof root.SenaishaDashboardDetection.isDashboardDevice === "function") {
-      return root.SenaishaDashboardDetection.isDashboardDevice(info);
+    if (root && root.AlainaXSenairaDashboardDetection &&
+        typeof root.AlainaXSenairaDashboardDetection.isDashboardDevice === "function") {
+      return root.AlainaXSenairaDashboardDetection.isDashboardDevice(info);
     }
     const width = Number(info && info.width) || 0;
     const height = Number(info && info.height) || 0;
@@ -194,17 +194,42 @@
 
   function detectDevice() {
     const ua = String((root.navigator && root.navigator.userAgent) || "");
+    const vv = root.visualViewport;
+
+    const width = Math.floor(
+      (vv && Number.isFinite(vv.width) && vv.width) ||
+      root.innerWidth ||
+      document.documentElement.clientWidth ||
+      0
+    );
+
+    const height = Math.floor(
+      (vv && Number.isFinite(vv.height) && vv.height) ||
+      root.innerHeight ||
+      document.documentElement.clientHeight ||
+      0
+    );
+
+    const silkClass = Boolean(
+      html.classList.contains("alaina-x-senaira-silk") ||
+      (document.body && document.body.classList.contains("alaina-x-senaira-silk"))
+    );
+
+    const silkUa = /\bSilk\//i.test(ua) ||
+      /AmazonWebAppPlatform/i.test(ua) ||
+      /\bKF[A-Z0-9]{2,}\b/i.test(ua);
+
     return isDashboardDevice({
-      isSilk: /Silk\//i.test(ua),
+      isSilk: silkClass || silkUa,
+      isSilkClass: silkClass,
       userAgent: ua,
       forceDashboard: new URLSearchParams(root.location.search).get("dashboard") === "1",
-      width: root.innerWidth,
-      height: root.innerHeight,
+      width,
+      height,
       maxTouchPoints: Number((root.navigator && root.navigator.maxTouchPoints) || 0),
       coarsePointer: Boolean(root.matchMedia && root.matchMedia("(pointer: coarse)").matches)
     });
   }
-
   function makeElement(tag, className, id) {
     const el = document.createElement(tag);
     if (className) el.className = className;
@@ -254,7 +279,7 @@
 
   function currentWeather() {
     let storageValue = null;
-    try { storageValue = root.localStorage.getItem("alainaWeather"); } catch (_) {}
+    try { storageValue = root.localStorage.getItem("alainaXSenairaWeather"); } catch (_) {}
     return readWeatherSnapshot({
       chipTemp: weatherChipTemp ? weatherChipTemp.textContent : "",
       chipIcon: weatherChipIcon ? weatherChipIcon.textContent : "",
@@ -356,6 +381,27 @@
     });
   });
 
+  function bootstrapDashboard() {
+    reevaluateDevice();
+
+    if (!detectDevice() || controller.isEngaged()) return;
+
+    const selected = stations.some(function (card) {
+      return card.classList.contains("active");
+    });
+
+    const alreadyPlaying = [primaryAudio, standbyAudio].some(function (audio) {
+      return Boolean(audio && !audio.paused && !audio.ended);
+    });
+
+    if (selected || alreadyPlaying) {
+      controller.activate();
+    }
+  }
+
+  [0, 160, 500, 1100].forEach(function (delay) {
+    root.setTimeout(bootstrapDashboard, delay);
+  });
   const artObserver = new MutationObserver(syncStationArt);
   artObserver.observe(coverArt, { attributes: true, attributeFilter: ["src"] });
 

@@ -1,4 +1,4 @@
-name: Update Alaina Live News
+name: Update Alaina X Senaira News
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
           OUT = Path("news.json")
           req = urllib.request.Request(
               FEED,
-              headers={"User-Agent": "AlainaLive/1.0 (+https://naps73r.github.io/alainalive/)"}
+              headers={"User-Agent": "AlainaXSenaira/1.0 (+https://naps73r.github.io/alaina-x-senaira/)"}
           )
           try:
               with urllib.request.urlopen(req, timeout=25) as response:
@@ -66,7 +66,7 @@ jobs:
         shell: bash
         run: |
           if git diff --quiet -- news.json; then exit 0; fi
-          git config user.name "alaina-live-bot"
+          git config user.name "Alaina X Senaira-x-Alaina X Senaira-bot"
           git config user.email "actions@users.noreply.github.com"
           git add news.json
           git commit -m "Update Bahrain news headlines"

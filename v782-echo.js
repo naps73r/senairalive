@@ -18,10 +18,10 @@
   if (!isSilk) return;
 
   const root = document.documentElement;
-  root.classList.add("alaina-silk");
+  root.classList.add("Alaina X Senaira-x-Alaina X Senaira-silk");
 
   function applySilkClassToBody() {
-    document.body?.classList.add("alaina-silk");
+    document.body?.classList.add("Alaina X Senaira-x-Alaina X Senaira-silk");
   }
 
   if (document.body) {
@@ -58,15 +58,15 @@
     );
 
     if (height !== lastHeight) {
-      root.style.setProperty("--alaina-visible-height", `${height}px`);
+      root.style.setProperty("--Alaina X Senaira-x-Alaina X Senaira-visible-height", `${height}px`);
       lastHeight = height;
     }
 
-    root.style.setProperty("--alaina-visible-width", `${width}px`);
+    root.style.setProperty("--Alaina X Senaira-x-Alaina X Senaira-visible-width", `${width}px`);
 
-    root.classList.toggle("alaina-silk-very-short", height < 500);
-    root.classList.toggle("alaina-silk-short", height >= 500 && height < 610);
-    root.classList.toggle("alaina-silk-medium", height >= 610);
+    root.classList.toggle("Alaina X Senaira-x-Alaina X Senaira-silk-very-short", height < 500);
+    root.classList.toggle("Alaina X Senaira-x-Alaina X Senaira-silk-short", height >= 500 && height < 610);
+    root.classList.toggle("Alaina X Senaira-x-Alaina X Senaira-silk-medium", height >= 610);
 
     root.dataset.silkViewport = `${width}x${height}`;
   }
